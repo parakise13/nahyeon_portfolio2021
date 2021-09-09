@@ -1,0 +1,570 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Playfair+Display:wght@400;600&display=swap");
+/* font-family: "Noto Sans KR", sans-serif; 
+  font-family: 'Playfair Display', serif;*/
+
+:root {
+  --color-dark-khaki: #746e67;
+  --color-khaki: #9d968c;
+  --color-light-beige: #f6f5f2;
+  --color-black: #333;
+  --color-white: white;
+}
+
+/* layout */
+body {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  box-sizing: border-box;
+  color: var(--color-black);
+}
+
+/* 공통 */
+.inner {
+  padding: 0 5%;
+}
+
+.title {
+  font-size: 100px;
+  font-weight: normal;
+}
+
+.tab {
+  display: none;
+}
+
+section.visual.active,
+section.skills.active,
+section.ncs.active,
+section.ncsList.active,
+footer.active {
+  display: none;
+}
+
+/* visual */
+.visual {
+  width: 100%;
+  padding-top: 193px;
+  padding-bottom: 173px;
+  overflow: hidden;
+  position: relative;
+}
+
+.visual .inner {
+  padding: 0;
+  position: relative;
+}
+
+.visual .inner .title {
+  margin-left: 38%;
+  z-index: 1000;
+}
+
+.visual_contentsBox {
+  margin-top: 163px;
+  display: flex;
+}
+
+.visual_contentsBox .img {
+  width: 42%;
+  margin-right: 4%;
+}
+
+.visual_contentsBox .img img {
+  width: 100%;
+}
+
+.visual_contentsBox .text {
+  font-size: 18px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: normal;
+  line-height: 1.8;
+  z-index: 1;
+}
+
+.visual_contentsBox .img img.motion,
+.ncs_contentsBox .img img.motion {
+  animation: slide-left 0.5s;
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+.bgImg {
+  width: 43%;
+  min-height: 100%;
+  position: absolute;
+  top: 9%;
+  right: 0;
+}
+
+.bgImg img {
+  width: 100%;
+  opacity: 0.8;
+  z-index: 800;
+}
+
+/* skills */
+.background {
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  top: -5%;
+  left: 0;
+  z-index: -1;
+}
+
+.background img {
+  width: 100%;
+}
+
+.skills {
+  padding-top: 90px;
+  padding-bottom: 130px;
+  position: relative;
+}
+
+.skills .inner .title {
+  padding-left: 20%;
+  padding-bottom: 70px;
+}
+
+.skillList {
+  margin: 0 6%;
+}
+
+.skillList li .firstList {
+  display: flex;
+  margin-bottom: 70px;
+}
+
+.skillList li .secondList {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.skillList li .firstList li {
+  margin-right: 5%;
+}
+
+.skillList li .secondList li {
+  margin-left: 5%;
+}
+
+.skillList .img {
+  width: 120px;
+}
+
+.skillList .img img {
+  width: 100%;
+}
+
+.skillList .motion {
+  animation: fadeIn 0.7s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+/* ncs */
+.ncs {
+  position: relative;
+  padding-top: 90px;
+  padding-bottom: 50px;
+  overflow: hidden;
+}
+
+.ncs .background2 {
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.ncs .background2 img {
+  width: 100%;
+}
+
+.ncs .inner {
+  padding: 0;
+}
+
+.titleBox {
+  margin-left: 48%;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.titleBox .detail {
+  font-size: 28px;
+  font-weight: normal;
+}
+
+.ncs_contentsBox {
+  display: flex;
+  align-items: center;
+}
+
+.ncs_contentsBox .img {
+  width: 50%;
+}
+
+.ncs_contentsBox .img img {
+  width: 100%;
+}
+
+.ncs_contentsBox .text {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  margin-left: 6%;
+  line-height: 1.8;
+  position: relative;
+  color: var(--color-white);
+}
+
+.ncs_contentsBox .text::before {
+  content: "";
+  width: 690px;
+  height: 350px;
+  background: var(--color-khaki);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+/* ncsList */
+.ncsList {
+  padding: 158px 0;
+  overflow: hidden;
+}
+
+.slide {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.slide li a {
+  text-align: center;
+  width: 100%;
+}
+
+.slide li a .img {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 3%;
+}
+
+.slide li a .img img {
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  border-bottom: 3px solid var(--color-light-beige);
+  transition: transform 0.5s;
+}
+
+.slide li a img:hover {
+  transform: scale(1.05);
+}
+
+.slick-arrow {
+  z-index: 1000;
+  background: none;
+  border: none;
+  color: transparent;
+  width: 20px;
+  height: 34px;
+}
+
+.slick-prev {
+  position: absolute;
+  top: 35%;
+  left: -3%;
+}
+
+.slick-next {
+  position: absolute;
+  top: 35%;
+  right: -3.5%;
+}
+
+.slick-prev::after {
+  content: url(../img/arrow-left.svg);
+}
+
+.slick-next::after {
+  content: url(../img/arrow-right.svg);
+}
+
+/* Descktops 1400px */
+@media (min-width: 1025px) and (max-width: 1400px) {
+  .title {
+    font-size: 80px;
+  }
+
+  .skillList .img {
+    width: 110px;
+  }
+
+  .slide {
+    max-width: 1400px;
+  }
+}
+
+/*Laptops, Desktops (min-width: 1025px) and */
+/* Tablets, Ipads (portrait) (min-width: 768px) and */
+@media (max-width: 1024px) {
+  .title {
+    font-size: 70px;
+  }
+
+  .tab {
+    display: block;
+  }
+
+  /* visual */
+  .visual {
+    padding-top: 166px;
+    padding-bottom: 73px;
+    margin-bottom: 70px;
+  }
+
+  .visual .inner .title {
+    margin-left: 5%;
+  }
+
+  .visual_contentsBox {
+    margin-top: 110px;
+  }
+
+  .visual_contentsBox .img {
+    width: 50%;
+    margin-right: 4%;
+  }
+
+  .visual_contentsBox .text {
+    font-size: 15px;
+  }
+
+  .bgImg {
+    width: 92%;
+    top: 5%;
+    right: -80%;
+  }
+
+  .background {
+    top: 5%;
+  }
+
+  /* skills */
+  .skills {
+    padding-top: 70px;
+    padding-bottom: 110px;
+  }
+
+  .skills .inner .title {
+    padding-left: 10%;
+    padding-bottom: 45px;
+  }
+
+  .skillList {
+    margin: 0 5%;
+  }
+
+  .skillList li .firstList {
+    margin-bottom: 35px;
+    justify-content: space-between;
+  }
+
+  .skillList .img {
+    width: 100px;
+  }
+
+  .skillList li .secondList {
+    justify-content: space-around;
+    margin: 0 17%;
+  }
+
+  .skillList li .firstList li {
+    margin-right: 0;
+  }
+
+  .skillList li .secondList li {
+    margin-left: 0;
+  }
+
+  /* ncs */
+  .ncs {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .titleBox .detail {
+    font-size: 20px;
+  }
+
+  .ncs_contentsBox .text::before {
+    content: "";
+    width: 400px;
+    height: 205px;
+  }
+
+  .ncs_contentsBox .text {
+    font-size: 15px;
+    margin-left: 7%;
+  }
+
+  .ncs_contentsBox .text .tabSpan {
+    display: none;
+  }
+
+  .ncs_contentsBox .text .web {
+    display: none;
+  }
+
+  /* ncsList */
+  .ncsList {
+    padding: 70px 0;
+  }
+
+  .slide li a .img {
+    padding: 0 10%;
+  }
+
+  .slick-prev,
+  .slick-next {
+    top: 25%;
+  }
+}
+
+/*Most of the Smartphones Mobiles (Portrait)  */
+@media (min-width: 320px) and (max-width: 480px) {
+  .title {
+    font-size: 36px;
+  }
+
+  /* visual */
+  .visual {
+    padding-top: 103px;
+    padding-bottom: 50px;
+    margin-bottom: 0;
+  }
+
+  .visual_contentsBox {
+    flex-direction: column;
+    margin-top: 30px;
+  }
+
+  .visual_contentsBox .img {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .visual_contentsBox .text {
+    font-size: 10px;
+    padding: 0 5%;
+  }
+
+  .bgImg {
+    display: none;
+  }
+
+  .tab,
+  .mob {
+    display: none;
+  }
+
+  /* skills */
+  .skills {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    position: relative;
+  }
+
+  .skills .inner .title {
+    padding-left: 0;
+    padding-bottom: 30px;
+  }
+
+  .skillList li .firstList {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  .skillList .img {
+    width: 55px;
+  }
+
+  /* ncs */
+  .ncs {
+    padding-top: 50px;
+    padding-bottom: 0;
+  }
+
+  .titleBox {
+    margin-left: 5%;
+    text-align: left;
+    margin-bottom: 40px;
+  }
+
+  .titleBox .detail {
+    font-size: 12px;
+  }
+
+  .ncs_contentsBox {
+    flex-direction: column;
+  }
+
+  .ncs_contentsBox .img {
+    width: 100%;
+    height: 250px;
+    background: url(../img/about-ncs.png) no-repeat center/cover;
+  }
+
+  .ncs_contentsBox .img img {
+    display: none;
+  }
+
+  .ncs_contentsBox .text {
+    font-size: 10px;
+    color: var(--color-black);
+    padding: 30px 0 25px 0;
+    margin: 0 5%;
+  }
+
+  .ncs_contentsBox .text::before {
+    width: 200px;
+    height: 100px;
+  }
+
+  /* ncsList */
+  .ncsList {
+    padding: 50px 0;
+  }
+
+  .slick-arrow {
+    width: 10px;
+  }
+
+  .slick-prev,
+  .slick-next {
+    top: 22%;
+  }
+}

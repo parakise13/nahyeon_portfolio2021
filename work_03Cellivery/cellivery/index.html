@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/font-awesome.min.css" />
+        <link rel="stylesheet" href="css/slick.css" />
+        <link rel="stylesheet" href="css/slick-theme.css" />
+        <link rel="stylesheet" href="css/animate.min.css" />
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script defer src="js/slick.js"></script>
+        <script defer src="js/dropdown.js"></script>
+        <script defer src="js/scrollnToggle.js"></script>
+        <script defer src="js/slide.js"></script>
+        <script defer src="js/main.js"></script>
+        <script defer src="js/slick.min.js"></script>
+        <script src="js/scrolla.jquery.min.js"></script>
+        <title>celivery</title>
+    </head>
+    <body>
+        <div class="wrap">
+            <!--header-->
+            <header>
+                <a href="#" class="img"
+                    ><img src="img/logo.png" alt="logo" class="logo"
+                /></a>
+                <ul class="mainMenu_box">
+                    <li class="main_menu">
+                        <a href="#" class="navbar_menu">ABOUT US</a>
+                        <ul class="sub">
+                            <li><a href="#">Overview</a></li>
+                            <li><a href="#">Greeting</a></li>
+                            <li><a href="#">Member</a></li>
+                            <li><a href="#">History</a></li>
+                            <li><a href="#">Partnership & Collaboration</a></li>
+                            <li><a href="#">Location</a></li>
+                        </ul>
+                    </li>
+                    <li class="main_menu">
+                        <a href="#" class="navbar_menu">PIPELINE</a>
+                        <ul class="sub">
+                            <li><a href="#">TSDT Platform</a></li>
+                            <li><a href="#">iCP-SOCS3</a></li>
+                            <li><a href="#">iCP-BMP2</a></li>
+                            <li><a href="#">CP_SP</a></li>
+                            <li><a href="#">CV-14</a></li>
+                            <li><a href="#">iCP-NI</a></li>
+                            <li><a href="#">CV-16</a></li>
+                        </ul>
+                    </li>
+                    <li class="main_menu">
+                        <a href="#" class="navbar_menu">R&D</a>
+                        <ul class="sub">
+                            <li><a href="#">Overview</a></li>
+                            <li><a href="#">Publication</a></li>
+                            <li><a href="#">Intellectual Proprietary</a></li>
+                            <li><a href="#">Certification</a></li>
+                        </ul>
+                    </li>
+                    <li class="main_menu">
+                        <a href="#" class="navbar_menu">IR</a>
+                        <ul class="sub">
+                            <li><a href="#">주주게시판</a></li>
+                            <li><a href="#">대표이사 인터뷰영상</a></li>
+                            <li><a href="#">기술설명</a></li>
+                            <li><a href="#">Notice & News</a></li>
+                            <li><a href="#">Financials</a></li>
+                            <li><a href="#">Stock Information</a></li>
+                        </ul>
+                    </li>
+                    <li class="main_menu">
+                        <p><a href="#" id="last" class="navbar_menu">PR</a></p>
+                        <ul class="sub">
+                            <li><a href="#">Notice</a></li>
+                            <li><a href="#">Press Release</a></li>
+                            <li><a href="#">TV Broadcasting News</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="side">
+                    <ul class="s_menu">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">LOGIN</a></li>
+                        <li><a href="#">JOIN</a></li>
+                        <li><a href="#">PRESS RELEASE</a></li>
+                    </ul>
+                    <a href="#" class="btn01">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+                <div class="toggleMenu">
+                    <p class="img">
+                        <img src="img/all_nav_bg_03.jpg" alt="" />
+                    </p>
+                    <div class="menuBox">
+                        <ul class="aboutToggle">
+                            <li class="title"><a href="#">ABOUT US</a></li>
+                            <li><a href="#">Overview</a></li>
+                            <li><a href="#">Greeting</a></li>
+                            <li><a href="#">Member</a></li>
+                            <li><a href="#">History</a></li>
+                            <li><a href="#">Partnership & Collaboration</a></li>
+                            <li><a href="#">Location</a></li>
+                        </ul>
+                        <ul class="pipeToggle">
+                            <li class="title"><a href="#">PIPELINE</a></li>
+                            <li><a href="#">TSDT Platform</a></li>
+                            <li><a href="#">iCP-SOCS3</a></li>
+                            <li><a href="#">iCP-BMP2</a></li>
+                            <li><a href="#">CP_SP</a></li>
+                            <li><a href="#">CV-14</a></li>
+                            <li><a href="#">iCP-NI</a></li>
+                            <li><a href="#">CV-16</a></li>
+                        </ul>
+                        <ul class="rndToggle">
+                            <li class="title"><a href="#">R&D</a></li>
+                            <li><a href="#">Overview</a></li>
+                            <li><a href="#">Publication</a></li>
+                            <li><a href="#">Intellectual Proprietary</a></li>
+                            <li><a href="#">Certification</a></li>
+                        </ul>
+                        <ul class="irToggle">
+                            <li class="title"><a href="#">IR</a></li>
+                            <li><a href="#">주주게시판</a></li>
+                            <li><a href="#">대표이사 인터뷰영상</a></li>
+                            <li><a href="#">기술설명</a></li>
+                            <li><a href="#">Notice & News</a></li>
+                            <li><a href="#">Financials</a></li>
+                            <li><a href="#">Stock Information</a></li>
+                        </ul>
+                        <ul class="prToggle">
+                            <li class="title"><a href="#">PR</a></li>
+                            <li><a href="#">Notice</a></li>
+                            <li><a href="#">Press Release</a></li>
+                            <li><a href="#">TV Broadcasting News</a></li>
+                        </ul>
+                    </div>
+                    <div class="wrapBtn">
+                        <a href="#" class="btn">
+                            <span class="line-top"></span>
+                            <span class="line-mid"></span>
+                            <span class="line-bot"></span>
+                        </a>
+                    </div>
+                </div>
+            </header>
+            <!--section.visual-->
+            <section class="visual">
+                <ul class="slider">
+                    <li class="slide01">
+                        <!--<img src="img/main_visual_01.jpg" alt="">-->
+                        <div class="txt">
+                            <p class="mainTitle">
+                                An Efficient Delivery Technology For
+                            </p>
+                            <p class="mainTitle">
+                                Discovery/Development Of<br class="mo" />
+                                Breakthrought Medicines
+                            </p>
+                            <p class="subTitle">
+                                TSDT(Therapeuticmolecule Systemic Delivery
+                                Technology) Platform
+                            </p>
+                        </div>
+                    </li>
+                    <li class="slide02">
+                        <!--<img src="img/main_visual_01.jpg" alt="">-->
+                        <div class="txt">
+                            <p class="mainTitle">
+                                An Efficient Delivery Technology For
+                            </p>
+                            <p class="mainTitle">
+                                Discovery/Development Of<br class="mo" />
+                                Breakthrought Medicines
+                            </p>
+                            <p class="subTitle">
+                                TSDT(Therapeuticmolecule Systemic Delivery
+                                Technology) Platform
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <!--section.overview-->
+            <section
+                class="overview animate"
+                data-animate="fadeIn"
+                data-duration="2s"
+            >
+                <div class="inner">
+                    <h2 class="smallTit">OVERVIEW</h2>
+                    <p>
+                        Mission of Cellivery is to<br class="hide" />
+                        commercialize life-saving therapeutics and cultivate
+                        revenue regenerating partnerships with<br
+                            class="hide"
+                        />
+                        companies in biotechnology and the pharmaceutical
+                        industry around world.
+                    </p>
+                </div>
+            </section>
+            <!--section.rnd-->
+            <section class="rnd">
+                <div class="leftTop"></div>
+                <div class="rightBottom">
+                    <div
+                        class="top animate"
+                        data-animate="fadeIn"
+                        data-duration="2s"
+                    >
+                        <h2 class="smallTit">R & D CENTER</h2>
+                        <p class="bigTitle">
+                            Intracellular Protein Therapy with TSDT
+                        </p>
+                        <p>
+                            Protein transduction exploits the ability of
+                            specific basic-, amphipathic- and hydrophobic- cell
+                            penetrating peptide (CPP) sequences to enhance the
+                            uptake of proteins and other macromolecules by
+                            mammalian cells.
+                        </p>
+                    </div>
+                    <div class="bottom">
+                        <p class="img">
+                            <img src="img/main_s3_img2.jpg" alt="" />
+                        </p>
+                        <ul class="list">
+                            <li
+                                class="animate"
+                                data-animate="fadeIn"
+                                data-duration="2s"
+                                data-delay="0s"
+                            >
+                                <a href="#">
+                                    <p class="img">
+                                        <img
+                                            src="img/main_s3_item1.png"
+                                            alt=""
+                                        />
+                                    </p>
+                                    <p class="name">Overview</p>
+                                </a>
+                            </li>
+                            <li
+                                class="animate"
+                                data-animate="fadeIn"
+                                data-duration="2s"
+                                data-delay="0.3s"
+                            >
+                                <a href="#">
+                                    <p class="img">
+                                        <img
+                                            src="img/main_s3_item2.png"
+                                            alt=""
+                                        />
+                                    </p>
+                                    <p class="name">Publication</p>
+                                </a>
+                            </li>
+                            <li
+                                class="animate"
+                                data-animate="fadeIn"
+                                data-duration="2s"
+                                data-delay="0.6s"
+                            >
+                                <a href="#">
+                                    <p class="img">
+                                        <img
+                                            src="img/main_s3_item3.png"
+                                            alt=""
+                                        />
+                                    </p>
+                                    <p class="name">
+                                        Intellectual<br />Proprietary
+                                    </p>
+                                </a>
+                            </li>
+                            <li
+                                class="animate"
+                                data-animate="fadeIn"
+                                data-duration="2s"
+                                data-delay="0.9s"
+                            >
+                                <a href="#">
+                                    <p class="img">
+                                        <img
+                                            src="img/main_s3_item4.png"
+                                            alt=""
+                                        />
+                                    </p>
+                                    <p class="name">Certification</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!--section.pipeline-->
+            <section class="pipeline">
+                <div class="inner">
+                    <div
+                        class="titleBox animate"
+                        data-animate="fadeIn"
+                        data-duration="2s"
+                    >
+                        <h2 class="smallTit">PIPELINE</h2>
+                        <p class="bigTitle">
+                            All of Cellivery starts from R&D.
+                        </p>
+                        <p class="bigTitle">
+                            Introducing Cellivery's pipeline.
+                        </p>
+                    </div>
+                    <ul
+                        class="pipeline_list animate"
+                        data-animate="fadeIn"
+                        data-duration="2s"
+                    >
+                        <li class="list01">
+                            <a href="#">
+                                <div class="txt">
+                                    <h2>TSDT Platform</h2>
+                                    <p>
+                                        Advanced Macromolecule Transduction<br
+                                            class="hide"
+                                        />
+                                        Domain (aMTD)-enabled...more
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list02">
+                            <a href="#">
+                                <div class="txt">
+                                    <h2>iCP-SOCS3</h2>
+                                    <p>
+                                        Suppressor of cytokine sigmaling 3<br
+                                            class="hide"
+                                        />
+                                        (SOCS3) functions as a negative...more
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list03">
+                            <a href="#">
+                                <div class="txt">
+                                    <h2>iCP-Parkin</h2>
+                                    <p>
+                                        A BBB-Crossing Protein Savlor For<br
+                                            class="hide"
+                                        />
+                                        Damaged Neurons...more
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list04">
+                            <a href="#">
+                                <div class="txt">
+                                    <h2>CP-BMP2</h2>
+                                    <p>
+                                        No Carrier! Only Simple injection<br
+                                            class="hide"
+                                        />
+                                        For Bone Regeneration!...more
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list05">
+                            <a href="#">
+                                <div class="txt">
+                                    <h2>CP-ΔSOCS3</h2>
+                                    <p>
+                                        The abnormal control of leptin, an<br
+                                            class="hide"
+                                        />
+                                        adipocyte-secreted hormone
+                                        control...more
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list06">
+                            <a href="#">
+                                <div class="txt">
+                                    <h2>iCP-Cre</h2>
+                                    <p>
+                                        Genetically engineered mouse models<br
+                                            class="hide"
+                                        />
+                                        are useful tolls for studying
+                                        gene...more
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list07">
+                            <a href="#">
+                                <div class="txt">
+                                    <h2>iCP-PFs/Cas9</h2>
+                                    <p>
+                                        Terminally differentiated somatic<br
+                                            class="hide"
+                                        />
+                                        cells can be reprogrammed to...more
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list08">
+                            <a href="#">
+                                <div class="txt">
+                                    <h2>CV-14</h2>
+                                    <p>
+                                        Ataxia is a neurodegenerative disease
+                                        defined as<br class="hide" />
+                                        an impaired voluntary
+                                        coordination...more
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list09">
+                            <a href="#">
+                                <div class="txt">
+                                    <h2>iCP-NI</h2>
+                                    <p>
+                                        Sepsis is one of the 10 leading causes
+                                        of<br class="hide" />
+                                        death worldwide and widely...more
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list10">
+                            <a href="#">
+                                <div class="txt">
+                                    <h2>CV-16</h2>
+                                    <p>
+                                        Single-chain variable fragment (scFv)
+                                        consists of<br class="hide" />
+                                        the smallest functional antigen...more
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!--section.press-->
+            <section class="press">
+                <div class="inner">
+                    <div
+                        class="left animate"
+                        data-animate="fadeIn"
+                        data-duration="2s"
+                    >
+                        <p class="smallTit">PRESS RELEASE</p>
+                        <ul id="pressRelease" class="pressList">
+                            <li>
+                                <a href="#">
+                                    <p class="date">2021.06.29</p>
+                                    <p class="pressTitle">
+                                        파킨슨병 정복나선 '셀리버리', 기술수출
+                                        가시권
+                                    </p>
+                                    <button class="plus"><span></span></button>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="date">2021.06.17</p>
+                                    <p class="pressTitle">
+                                        뇌세포 '프리패스'로 통과, 고장난 청소부
+                                        살려 알츠하이머 치료 나서는 셀리버리
+                                    </p>
+                                    <button class="plus"><span></span></button>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="date">2021.06.03</p>
+                                    <p class="pressTitle">
+                                        셀리버리, 아시아 1위 제약사 평가결과
+                                        통보...성공시 라이선스 체결
+                                    </p>
+                                    <button class="plus"><span></span></button>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="date">2021.05.20</p>
+                                    <p class="pressTitle">
+                                        셀리버리, 코로나19 면역치료제
+                                    </p>
+                                    <button class="plus"><span></span></button>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="date">2021.04.15</p>
+                                    <p class="pressTitle">
+                                        조대웅 셀리버리 대표"내달 FDA와
+                                        사전미팅...코로나치료제 임상 이상無"
+                                    </p>
+                                    <button class="plus"><span></span></button>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="date">2020.12.11</p>
+                                    <p class="pressTitle">
+                                        [김우섭의 바이오 탐구영역] 셀리버리
+                                        "세계 유일 세포 투과 기술로 파킨슨병..."
+                                    </p>
+                                    <button class="plus"><span></span></button>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="date">2020.11.24</p>
+                                    <p class="pressTitle">
+                                        셀리버리, 다케다로부터 심장불치 유전병
+                                        치료신약 결과 보고서 수령
+                                    </p>
+                                    <button class="plus"><span></span></button>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p class="date">2020.10.30</p>
+                                    <p class="pressTitle">
+                                        셀리버리 "바이오-유럽서 글로벌
+                                        제약사로부터 라이센싱아웃 위한 실사
+                                        요청...
+                                    </p>
+                                    <button class="plus"><span></span></button>
+                                </a>
+                            </li>
+                        </ul>
+                        <a href="#" class="more">+</a>
+                    </div>
+                    <div
+                        class="right animate"
+                        data-animate="fadeIn"
+                        data-duration="2s"
+                    >
+                        <p class="smallTit">IR</p>
+                        <div class="stock">
+                            <div class="txtTop">
+                                <p>
+                                    We'll give you maximum investment<br />
+                                    value by securing future growth engines.
+                                </p>
+                                <p class="img">
+                                    <img src="img/main_s5_item1.png" alt="" />
+                                </p>
+                            </div>
+                            <div class="txtBottom">
+                                <h2>Stock Price</h2>
+                                <ul>
+                                    <li class="txtLeft">
+                                        <p>
+                                            ▼100,800
+                                            <span class="krw">KRW</span>
+                                        </p>
+                                        <p>
+                                            Change
+                                            <span class="price">3,200KRW▼</span>
+                                        </p>
+                                        <p>
+                                            Chg(%)
+                                            <span class="percent">-3,08%</span>
+                                        </p>
+                                    </li>
+                                    <li class="txtright">
+                                        <p>
+                                            Open
+                                            <span class="price">103,100</span>
+                                        </p>
+                                        <p>
+                                            High
+                                            <span class="price">104,000</span>
+                                        </p>
+                                        <p>
+                                            Low
+                                            <span class="price">100,300</span>
+                                        </p>
+                                        <p>
+                                            Volume
+                                            <span class="price">91,397</span>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a href="#" class="more">+</a>
+                    </div>
+                </div>
+            </section>
+            <!--media-->
+            <section class="media">
+                <div class="inner">
+                    <div
+                        class="txtBox animate"
+                        data-animate="fadeIn"
+                        data-duration="2s"
+                    >
+                        <p class="smallTit">MEDIA</p>
+                        <h2 class="bigTitle">
+                            Cellivery <span>R&D introduction</span>
+                            <span>Video</span>
+                        </h2>
+                        <p class="content">
+                            R&D is a starting poingt of drug development and
+                            commercialization and a locomotive in realizing
+                            continuous growth.
+                        </p>
+                    </div>
+                    <div
+                        class="video animate"
+                        data-animate="fadeIn"
+                        data-duration="2s"
+                    >
+                        <p class="img">
+                            <!--<img src="img/main_s7_img1.jpg" alt="" />-->
+                        </p>
+                        <div class="playBtn">
+                            <p class="img">
+                                <img src="img/main_s7_item1.png" alt="" />
+                            </p>
+                            <p class="name">R&D introduction</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--partners-->
+            <section class="partners">
+                <div class="inner">
+                    <h2 class="partnerTit">PARTNER</h2>
+                    <ul class="partnerList">
+                        <li>
+                            <p class="img">
+                                <img src="img/main_s8_img1.jpg" alt="" />
+                            </p>
+                        </li>
+                        <li>
+                            <p class="img">
+                                <img src="img/main_s8_img2.jpg" alt="" />
+                            </p>
+                        </li>
+                        <li>
+                            <p class="img">
+                                <img src="img/main_s8_img3.jpg" alt="" />
+                            </p>
+                        </li>
+                        <li>
+                            <p class="img">
+                                <img src="img/main_s8_img4.jpg" alt="" />
+                            </p>
+                        </li>
+                        <li>
+                            <p class="img">
+                                <img src="img/main_s8_img5.jpg" alt="" />
+                            </p>
+                        </li>
+                        <li>
+                            <p class="img">
+                                <img src="img/main_s8_img6.jpg" alt="" />
+                            </p>
+                        </li>
+                        <li>
+                            <p class="img">
+                                <img src="img/main_s8_img1.jpg" alt="" />
+                            </p>
+                        </li>
+                        <li>
+                            <p class="img">
+                                <img src="img/main_s8_img2.jpg" alt="" />
+                            </p>
+                        </li>
+                        <li>
+                            <p class="img">
+                                <img src="img/main_s8_img3.jpg" alt="" />
+                            </p>
+                        </li>
+                        <li>
+                            <p class="img">
+                                <img src="img/main_s8_img4.jpg" alt="" />
+                            </p>
+                        </li>
+                        <li>
+                            <p class="img">
+                                <img src="img/main_s8_img5.jpg" alt="" />
+                            </p>
+                        </li>
+                        <li>
+                            <p class="img">
+                                <img src="img/main_s8_img6.jpg" alt="" />
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!--footer-->
+            <footer>
+                <div class="inner">
+                    <p class="footerLogo">
+                        <img src="img/foot_logo.jpg" alt="" />
+                    </p>
+                    <div class="infoNcopyrigh">
+                        <ul class="info">
+                            <li>
+                                Address. (K-BIZ DMC Tower) f9, 189 Sungnam-ro,
+                                Mapo-gu, Seoul, South Korea. 03929.
+                            </li>
+                            <li>License. 617-86-16037</li>
+                            <li>Phone. +82-2-3151-8900</li>
+                            <li>Fax. +82-2-3151-8949</li>
+                            <li>CEO. Daewoong Jo</li>
+                            <li>Mail.cllivery@cellivery.com</li>
+                        </ul>
+                        <ul class="copyright">
+                            <li>
+                                <ul class="familyDropdown">
+                                    <li id="familysiteBtn">
+                                        <a href="#">
+                                            Family site <span>∨</span>
+                                        </a>
+                                    </li>
+                                    <li id="agentmenu">
+                                        <a href="#">celliveryreagent</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="right">
+                                <a href="#"> Privacy Policy - </a>
+                            </li>
+                            <li class="right">
+                                <a href="#">Terms of Use - </a>
+                            </li>
+                            <li class="left">
+                                <a href="#">- Privacy Policy</a>
+                            </li>
+                            <li class="left"><a href="#">- Terms of Use</a></li>
+                            <li>
+                                Copyrightⓒ 2019.Cellivery.All rights reserved.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script defer src="js/mouse.js"></script>
+    <script defer src="js/header.js"></script>
+    <script defer src="js/clock.js"></script>
+    <script defer src="js/toggle.js"></script>
+    <script defer src="js/greetings.js"></script>
+    <script defer src="js/main-visual.js"></script>
+    <script defer src="js/jquery.js"></script>
+    <!-- plugin -->
+    <script defer src="js/splitting.min.js"></script>
+    <script defer src="js/scrolla.jquery.min.js"></script>
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <!-- header -->
+      <header>
+        <div class="innerHeader">
+          <a class="logo" href="index.html">
+            Nahyeon Kim <span>Portfolio</span>
+          </a>
+          <div class="dateBox">
+            <div id="days"></div>
+            <div id="clock">00:00:00</div>
+          </div>
+          <ul class="nav">
+            <li><a href="index.html"> home</a></li>
+            <li><a href="about/about.html"> about</a></li>
+            <li><a href="works/works.html"> gallery</a></li>
+            <li><a href="contact/contact.html"> contact</a></li>
+          </ul>
+          <a href="#" class="menuBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+        </div>
+      </header>
+      <!-- openMenu -->
+      <div class="menu">
+        <div class="menuList">
+          <ul>
+            <li><a href="index.html"> Home</a></li>
+            <li><a href="about/about.html"> About</a></li>
+            <li><a href="works/works.html"> Gellery</a></li>
+            <li><a href="contact/contact.html"> Contact</a></li>
+          </ul>
+        </div>
+        <p>Copyright ⓒ 2021 Nahyeon Kim All Rights Reserved.</p>
+      </div>
+      <!-- visual -->
+      <section class="visual">
+        <div class="background"></div>
+        <div class="inner">
+          <div class="img animate" data-animate="motion">
+            <img
+              id="slide"
+              class="swp"
+              src="img/main-visual01.png"
+              alt="visual_image"
+            />
+            <h1 class="title1" data-splitting>Welcome to</h1>
+            <h1 class="title2" data-splitting>My Portfolio</h1>
+          </div>
+          <form class="loginForm hidden">
+            <input
+              type="text"
+              required
+              maxlength="30"
+              placeholder="What is your name?"
+            />
+            <button>Log In</button>
+          </form>
+          <h2 id="greeting" class="hidden"></h2>
+        </div>
+      </section>
+      <!-- about -->
+      <section class="about animate" data-animate="motion">
+        <div class="aboutInner">
+          <h1 class="title" data-splitting>About me</h1>
+          <div class="container">
+            <div class="txtBox">
+              <p class="txt">
+                끊임 없이 갈망하고 배우는 프론트엔드 개발자 김나현입니다.<br />
+                발 빠르게 변화하는 트랜드를 따라 가기위해, <br class="tab" />
+                기본기를 더 견고하게 다지기 위해, <br class="tab" />
+                그리고 부족한 부분은 채우기 위해 배움을 멈추지 않겠습니다.
+              </p>
+              <div class="btn">
+                <a href="about/about.html">
+                  <div class="btnLine">
+                    <svg
+                      id="레이어_1"
+                      data-name="레이어 1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 129.02 111.99"
+                    >
+                      <path
+                        class="path"
+                        d="M18.7,27.8S55.4,8.4,63.5,3.8,96-1.2,107,6.4,131,24.5,128.1,47,118,88.1,109.5,94.4s-22.4,9.7-35.9,13-42.7,9.7-54.9-6.7S2.6,84.1.5,56C.5,56-.4,37.9,18.7,27.8Z"
+                        transform="translate(0.01 0.01)"
+                      />
+                    </svg>
+                  </div>
+                  MORE
+                </a>
+              </div>
+            </div>
+            <div class="img">
+              <img
+                class="animate"
+                data-animate="motion"
+                src="img/main-about.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- works -->
+      <section class="works">
+        <div class="inner">
+          <div class="titleBox animate" data-animate="motion">
+            <h2 data-splitting>My works</h2>
+            <h1 class="title" data-splitting>GALLERY</h1>
+          </div>
+          <ul class="workList">
+            <li class="animate" data-animate="motion">
+              <a href="work_01Crew/work_crew.html">
+                <p class="img"><img src="img/main-work1.png" alt="" /></p>
+                <p class="workTitle">Crew a la Mode</p>
+                <p class="detail">The apparel & life style agency</p>
+              </a>
+            </li>
+            <li class="animate" data-animate="motion">
+              <a href="work_02Daebang/work_daebang.html">
+                <p class="img">
+                  <img src="img/main-work-circle.png" alt="" />
+                </p>
+                <p class="workTitle">DAEBANG</p>
+                <p class="detail">Construction Industrial Development</p>
+              </a>
+            </li>
+            <li class="animate" data-animate="motion">
+              <a href="work_03Cellivery/work_cellivery.html">
+                <p class="img"><img src="img/main-work2.png" alt="" /></p>
+                <p class="workTitle">Cellivery</p>
+                <p class="detail">Biotech company</p>
+              </a>
+            </li>
+          </ul>
+          <div class="workBtn">
+            <a href="works/works.html">SEE ALL WORKS</a>
+          </div>
+        </div>
+      </section>
+      <!-- footer -->
+      <footer>
+        <div class="inner">
+          <ul class="listBox">
+            <li>CONTACT ME</li>
+            <li>
+              <ul class="contactList">
+                <li>T. 010-3259-8852</li>
+                <li>E. parakise13@gmail.com</li>
+              </ul>
+            </li>
+            <li>
+              <ul class="menuList">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about/about.html">ABOUT</a></li>
+                <li><a href="works/works.html">GALLERY</a></li>
+                <li><a href="contact/contact.html">CONTACT</a></li>
+              </ul>
+            </li>
+          </ul>
+          <p class="txtBox">
+            If you have general or project enquiry,<br />
+            please don't hesitate to contac.<br />
+            Nahyeon Kim
+          </p>
+          <p class="copyright">
+            Copyright ⓒ 2021 Nahyeon Kim All Rights Reserved.
+          </p>
+          <div class="goTop">
+            <a href="#"><img src="img/arrow-up.svg" alt="" /></a>
+          </div>
+        </div>
+      </footer>
+      <!-- mouse -->
+      <div class="mouse"></div>
+    </div>
+  </body>
+</html>

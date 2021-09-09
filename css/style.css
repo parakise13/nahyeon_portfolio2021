@@ -1,0 +1,708 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Playfair+Display:wght@400;600&display=swap');
+/* font-family: "Noto Sans KR", sans-serif; 
+  font-family: 'Playfair Display', serif;*/
+
+:root {
+  --color-dark-khaki: #746e67;
+  --color-khaki: #9d968c;
+  --color-light-beige: #f6f5f2;
+  --color-black: #333;
+  --color-white: white;
+}
+
+/* layout */
+body {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  box-sizing: border-box;
+  color: var(--color-black);
+}
+
+/* 공통 */
+.hidden {
+  display: none;
+}
+
+.inner {
+  padding: 0 5%;
+}
+
+.title {
+  font-size: 100px;
+  font-weight: normal;
+}
+
+section.visual.active,
+section.about.active,
+section.works.active,
+footer.active {
+  display: none;
+}
+
+/* visual */
+.visual {
+  width: 100%;
+  padding-top: 103px;
+  position: relative;
+  overflow: hidden;
+}
+
+.visual .background {
+  background: url(../img/main-background.png) no-repeat center/cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.visual .inner .img {
+  position: relative;
+  width: 560px;
+  height: 580px;
+  margin: 0 auto;
+  margin-top: 100px;
+  z-index: 9;
+}
+
+.visual .inner .img::after {
+  content: "Hover me!";
+  font-size: 22px;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+}
+
+.visual .inner .img:hover::after {
+  display: none;
+}
+
+.visual .inner .img img {
+  width: 100%;
+}
+
+.visual .inner .img h1 {
+  font-size: 90px;
+  position: absolute;
+  font-weight: normal;
+}
+
+.title1 {
+  top: 40px;
+  left: -68%;
+}
+
+.title2 {
+  bottom: 40px;
+  right: -65%;
+}
+
+/* loginform */
+.loginForm {
+  padding: 120px 0 80px 0;
+  text-align: center;
+}
+
+.loginForm input {
+  height: 30px;
+  width: 250px;
+  box-sizing: border-box;
+  border: 2px solid var(--color-khaki);
+  margin: 5px;
+  background: var(--color-light-beige);
+  text-indent: 15px;
+  transition: all 0.5s;
+}
+
+.loginForm button {
+  height: 30px;
+  width: 60px;
+  border: 2px solid var(--color-khaki);
+  color: white;
+  background: var(--color-khaki);
+  cursor: pointer;
+  font-size: 14px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: normal;
+}
+
+#greeting {
+  transition: all 0.5s;
+  padding: 80px 0 80px 0;
+  text-align: center;
+  font-size: 35px;
+  font-weight: normal;
+}
+
+/* about */
+.about {
+  position: relative;
+  overflow: hidden;
+  padding: 180px 0;
+}
+
+.aboutInner {
+  position: relative;
+  box-sizing: border-box;
+  padding-left: 5%;
+}
+
+.aboutInner .title {
+  position: absolute;
+  top: 7%;
+  left: 26%;
+  z-index: 900;
+}
+
+.aboutInner .container {
+  /* max-width: 1600px; */
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.aboutInner .container .txtBox {
+  width: 40%;
+  box-sizing: border-box;
+  padding-top: 21%;
+  color: var(--color-khaki);
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: normal;
+}
+
+.aboutInner .container .txtBox .txt {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.aboutInner .container .txtBox .btn {
+  width: 128px;
+  height: 111px;
+  margin-top: 50px;
+}
+
+.aboutInner .container .txtBox .btn a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding: 35% 35%;
+  box-sizing: border-box;
+}
+
+/* btn animation */
+.path {
+  fill: none;
+  stroke: #9d968c;
+  stroke-miterlimit: 10;
+}
+
+.btn a .btnLine {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.btn a:hover .btnLine {
+  animation: dash 1s linear infinite;
+}
+
+@keyframes dash {
+  0% {
+    transform: rotate(0deg);
+    transform-origin: center;
+  }
+
+  100% {
+    transform: rotate(360deg);
+    transform-origin: center;
+  }
+}
+
+.aboutInner .container .img {
+  padding: 8% 18%;
+  box-sizing: border-box;
+  background: var(--color-khaki);
+}
+
+.aboutInner .container .img img {
+  width: 100%;
+  z-index: 500;
+}
+
+.aboutInner .container .img img.motion {
+  animation: slide-right 0.5s;
+}
+
+@keyframes slide-right {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+/* works */
+.works {
+  padding-top: 90px;
+  background-color: var(--color-khaki);
+  color: var(--color-white);
+  padding-bottom: 100px;
+}
+
+.titleBox {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.titleBox h2 {
+  font-size: 40px;
+  font-weight: normal;
+  margin-bottom: 1%;
+}
+
+.titleBox .title {
+  letter-spacing: 15px;
+}
+
+.workList {
+  max-width: 1600px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.workList li:nth-child(1),
+.workList li:nth-child(3) {
+  padding-top: 100px;./-
+  box-sizing: border-box;
+}
+
+.workList li a {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: normal;
+}
+
+.workList li a .img {
+  width: 95%;
+  overflow: hidden;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.workList li:nth-child(2) a .img {
+  border-top-left-radius: 200px 255px;
+  border-top-right-radius: 200px 255px;
+  border-bottom-left-radius: 200px 255px;
+  border-bottom-right-radius: 200px 255px;
+}
+
+.workList li a .img img {
+  width: 100%;
+  transition: transform 0.5s;
+}
+
+.workList li a .img img:hover {
+  transform: scale(1.1);
+}
+
+.workList li a .workTitle {
+  margin-top: 20px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.workList li a .detail {
+  font-size: 18px;
+  margin-top: 2px;
+}
+
+.workList li:nth-child(1).motion {
+  animation: slide-down 0.4s;
+}
+
+.workList li:nth-child(2).motion {
+  animation: slide-down 0.8s;
+}
+
+.workList li:nth-child(3).motion {
+  animation: slide-down 1.2s;
+}
+
+@keyframes slide-down {
+  0% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  30% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+}
+
+.workBtn {
+  position: relative;
+  text-align: center;
+  margin-top: 100px;
+  padding: 1% 0;
+}
+
+.workBtn a {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  width: 100%;
+  height: 100%;
+}
+
+.workBtn a::after {
+  content: "";
+  width: 210px;
+  height: 90px;
+  border: 1px solid var(--color-white);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Descktops 1400px (min-width: 1281px)  */
+@media (max-width: 1400px) {
+  .title {
+    font-size: 80px;
+  }
+
+  /* visual */
+  .visual .inner .img h1 {
+    font-size: 70px;
+  }
+
+  .title1 {
+    left: -52%;
+  }
+
+  .title2 {
+    right: -52%;
+  }
+
+  /* about */
+  .aboutInner .title {
+    left: 25%;
+  }
+
+  /* works */
+  .workList li a .img {
+    align-items: center;
+    width: 80%;
+  }
+
+  .workList li a .workTitle {
+    font-size: 20px;
+  }
+
+  .workList li a .detail {
+    font-size: 16px;
+  }
+
+  .workList li a .img img {
+    width: 100%;
+    transition: transform 0.5s;
+  }
+
+  .titleBox .title {
+    letter-spacing: 10px;
+  }
+
+  .titleBox h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
+  }
+}
+
+/*Laptops, Desktops (min-width: 1025px) and */
+/* Tablets, Ipads (portrait) (min-width: 768px) and */
+@media (max-width: 1024px) {
+  .title {
+    font-size: 70px;
+  }
+
+  /* visual */
+  .visual .inner .img h1 {
+    font-size: 70px;
+  }
+
+  .title1 {
+    top: -55px;
+    left: 15%;
+  }
+
+  .title2 {
+    bottom: -80px;
+    left: 15%;
+  }
+
+  /* about */
+  .about {
+    padding: 100px 0;
+  }
+
+  .aboutInner .title {
+    top: -5%;
+    left: 5%;
+  }
+
+  .aboutInner .container .txtBox {
+    width: 40%;
+    padding-top: 14%;
+  }
+
+  .aboutInner .container .txtBox .txt {
+    font-size: 15px;
+    box-sizing: border-box;
+    padding-right: 9%;
+  }
+
+  .aboutInner .container .img {
+    width: 60%;
+    height: 60%;
+    text-align: center;
+    padding: 5% 15%;
+    margin: 0 auto;
+    margin-top: 13%;
+  }
+
+  .aboutInner .container .img img {
+    width: 100%;
+  }
+
+  .aboutInner .container .txtBox .btn {
+    width: 110px;
+    height: 93px;
+  }
+
+  .aboutInner .container .txtBox .btn a {
+    font-size: 14px;
+  }
+
+  .works {
+    padding-top: 70px;
+    padding-bottom: 80px;
+  }
+}
+
+/*Tablets, Ipads (landscape) (min-width: 481px) and */
+@media (max-width: 767px) {
+  .inner {
+    padding: 0;
+  }
+
+  /* about */
+  .about {
+    padding: 50px 0 0 0;
+  }
+
+  .aboutInner {
+    padding-left: 0;
+  }
+
+  .aboutInner .title {
+    position: static;
+    padding-bottom: 30px;
+    margin-left: 5%;
+  }
+
+  .aboutInner .container {
+    flex-direction: column-reverse;
+    margin: 0 0 8%;
+  }
+
+  .aboutInner .container .txtBox {
+    width: 100%;
+    padding-top: 5%;
+    margin: 0 5%;
+  }
+
+  .aboutInner .container .img {
+    margin: 0;
+    padding: 10% 25%;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    background: var(--color-khaki);
+  }
+
+  .aboutInner .container .img::before {
+    display: none;
+  }
+
+  .aboutInner .container .img img {
+    margin-top: 0;
+    width: 100%;
+  }
+
+  .tab {
+    display: none;
+  }
+
+  /* works */
+  .titleBox .title {
+    letter-spacing: 8px;
+  }
+
+  .titleBox h2 {
+    margin-bottom: 0px;
+  }
+
+  .workList li a .workTitle {
+    font-size: 18px;
+  }
+
+  .workList li a .detail {
+    font-size: 14px;
+  }
+
+  .workBtn a {
+    font-size: 16px;
+  }
+
+  .workBtn a::after {
+    width: 190px;
+    height: 70px;
+  }
+}
+
+/*Most of the Smartphones Mobiles (Portrait)  */
+@media (min-width: 320px) and (max-width: 480px) {
+  .title {
+    font-size: 36px;
+  }
+
+  /* visual */
+  .visual .inner .img h1 {
+    font-size: 36px;
+  }
+
+  .title1 {
+    top: -30px;
+    left: 15%;
+  }
+
+  .title2 {
+    bottom: -30px;
+    left: 15%;
+  }
+
+  .visual .inner .img {
+    width: 310px;
+    height: 335px;
+    margin: 0 auto;
+    margin-top: 170px;
+  }
+
+  .visual .inner .loginForm {
+    padding: 170px 0 80px 0;
+  }
+
+  /* about */
+  .about {
+    padding: 40px 0 0 0;
+  }
+
+  .aboutInner .container .img {
+    padding: 8% 20%;
+  }
+
+  .aboutInner .container .txtBox .txt {
+    font-size: 10px;
+  }
+
+  .aboutInner .container .txtBox .btn {
+    width: 128px;
+    height: 111px;
+    margin-top: 30px;
+  }
+
+  .aboutInner .container .txtBox .btn {
+    width: 90px;
+    height: 73px;
+  }
+
+  .aboutInner .container .txtBox .btn a {
+    font-size: 10px;
+  }
+
+  /* works */
+  .works {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .titleBox {
+    margin-bottom: 0px;
+  }
+
+  .titleBox .title {
+    letter-spacing: 5px;
+  }
+
+  .titleBox h2 {
+    font-size: 22px;
+    margin-bottom: 0px;
+  }
+
+  .workList {
+    flex-direction: column;
+  }
+
+
+  .workBtn {
+    margin-bottom: 3%;
+  }
+
+  .workBtn a {
+    font-size: 10px;
+  }
+
+  .workBtn a::after {
+    width: 150px;
+    height: 50px;
+  }
+
+  .workList li:nth-child(1),
+  .workList li:nth-child(2),
+  .workList li:nth-child(3) {
+    padding-top: 40px;
+  }
+
+  .workList li a .workTitle {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .workList li a .detail {
+    font-size: 12px;
+    margin-top: 5px;
+  }
+
+  .workList li a .img {
+    width: 70%;
+  }
+
+  .workBtn {
+    margin-top: 60px;
+  }
+}

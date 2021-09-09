@@ -1,0 +1,558 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Playfair+Display:wght@400;600&display=swap");
+/* font-family: "Noto Sans KR", sans-serif; 
+  font-family: 'Playfair Display', serif;*/
+
+:root {
+  --color-dark-khaki: #746e67;
+  --color-khaki: #9d968c;
+  --color-light-beige: #f6f5f2;
+  --color-black: #333;
+  --color-white: white;
+  --color-beige: #e1ded4;
+}
+
+/* layout */
+body {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  box-sizing: border-box;
+  color: var(--color-black);
+}
+
+/* 공통 */
+.title {
+  font-size: 70px;
+  font-weight: normal;
+}
+
+.detail {
+  font-size: 30px;
+  font-weight: normal;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+section.visual.active,
+section.workList.active,
+footer.active {
+  display: none;
+}
+
+/* visual */
+.visual {
+  background: url(../img/work-main.png) no-repeat center/cover;
+  height: 1080px;
+}
+
+.visual .inner .titleBox {
+  box-sizing: border-box;
+  padding: 26% 0;
+  text-align: center;
+}
+
+.mainTitle {
+  font-size: 100px;
+  font-weight: normal;
+  letter-spacing: 15px;
+  margin-bottom: 1%;
+}
+
+.subTitle {
+  font-size: 35px;
+  font-weight: normal;
+}
+
+/* workList */
+.workList {
+  overflow: hidden;
+}
+
+.workList .inner {
+  position: relative;
+  padding-bottom: 145px;
+}
+
+.workList .inner ul li {
+  padding-top: 250px;
+}
+
+.first {
+  padding-top: 310px !important;
+}
+
+.background1 {
+  width: 100%;
+  position: absolute;
+  top: 5%;
+  left: 0;
+  z-index: -1;
+}
+
+.background2 {
+  width: 100%;
+  position: absolute;
+  top: 25%;
+  left: 0;
+  z-index: -1;
+}
+
+.background3 {
+  width: 100%;
+  position: absolute;
+  top: 35%;
+  left: 0;
+  z-index: -1;
+}
+
+.background4 {
+  width: 100%;
+  position: absolute;
+  bottom: -50%;
+  left: 0;
+  z-index: -1;
+}
+
+.background5 {
+  width: 100%;
+  position: absolute;
+  bottom: -20%;
+  left: 0;
+  z-index: -1;
+}
+
+.workList .inner ul li {
+  position: relative;
+}
+
+.workList .inner ul li .titleBox {
+  position: absolute;
+}
+
+/* section.workList .inner ul li */
+.right .contentsBox {
+  padding: 0 8.5%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.left .contentsBox {
+  padding: 0 8.5%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.first .titleBox {
+  top: 250px;
+  right: 47%;
+  text-align: right;
+  z-index: 1000;
+}
+
+.right .titleBox {
+  top: 200px;
+  right: 47%;
+  text-align: right;
+  z-index: 1000;
+}
+
+.right .contentsBox .img {
+  position: relative;
+  width: 50%;
+  z-index: 1;
+}
+
+.right .contentsBox .img img {
+  width: 100%;
+}
+
+.right .contentsBox .img::before {
+  content: "";
+  width: 700px;
+  height: 400px;
+  background-color: var(--color-beige);
+  position: absolute;
+  top: -60px;
+  left: 225px;
+  z-index: -1;
+}
+
+.right .contentsBox .btn {
+  margin-top: 270px;
+}
+
+.left .titleBox {
+  top: 200px;
+  left: 47%;
+  z-index: 1000;
+  text-align: left;
+}
+
+.left .contentsBox .img {
+  position: relative;
+  width: 50%;
+  z-index: 1;
+  text-align: right;
+}
+
+.left .contentsBox .img::before {
+  content: "";
+  width: 700px;
+  height: 400px;
+  background-color: var(--color-light-beige);
+  position: absolute;
+  top: -60px;
+  left: -160px;
+  z-index: -1;
+}
+
+.left .contentsBox .img img {
+  width: 100%;
+}
+
+.left .contentsBox .btn {
+  margin-top: 270px;
+  margin-left: 42%;
+}
+
+footer .inner {
+  padding: 0 5%;
+}
+
+/* btn animation */
+.btn {
+  width: 170px;
+  height: 148px;
+}
+
+.btn a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding: 35% 0;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: normal;
+  color: var(--color-khaki);
+  text-align: center;
+}
+
+.btn a .btnLine {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.path {
+  fill: none;
+  stroke: #9d968c;
+  stroke-miterlimit: 10;
+}
+
+.btn a:hover .btnLine {
+  animation: dash 1s linear infinite;
+}
+
+@keyframes dash {
+  0% {
+    transform: rotate(0deg);
+    transform-origin: center;
+  }
+
+  100% {
+    transform: rotate(360deg);
+    transform-origin: center;
+  }
+}
+
+/* Descktops 1400px (min-width: 1281px)  */
+@media (max-width: 1400px) {
+  .title {
+    font-size: 55px;
+  }
+
+  .detail {
+    font-size: 24px;
+  }
+
+  .titleBox {
+    text-align: center;
+  }
+
+  /* visual */
+  .visual .inner .titleBox {
+    box-sizing: border-box;
+    padding: 32% 0;
+    text-align: center;
+  }
+
+  .mainTitle {
+    font-size: 80px;
+  }
+
+  .subTitle {
+    font-size: 30px;
+    font-weight: normal;
+  }
+
+  /* workList */
+  .workList .inner {
+    padding-bottom: 95px;
+  }
+
+  .workList .inner ul li {
+    padding-top: 215px;
+    padding-bottom: 105px;
+  }
+
+  .first {
+    padding-top: 290px !important;
+  }
+
+  .right .contentsBox {
+    padding: 0;
+    padding-left: 5%;
+    padding-right: 15%;
+  }
+
+  .left .contentsBox {
+    padding: 0;
+    padding-right: 5%;
+    padding-left: 15%;
+  }
+
+  .right .titleBox {
+    top: 0px;
+    right: 35%;
+  }
+
+  .first .titleBox {
+    top: 70px;
+    right: 35%;
+  }
+
+  .left .titleBox {
+    top: 0px;
+    left: 35%;
+  }
+
+  .right .contentsBox .img::before {
+    width: 420px;
+    height: 240px;
+    top: -60px;
+    left: 150px;
+  }
+
+  .left .contentsBox .img::before {
+    width: 420px;
+    height: 240px;
+    top: -60px;
+    left: -165px;
+  }
+
+  .right .contentsBox .btn,
+  .left .contentsBox .btn {
+    margin-top: 100px;
+  }
+
+  .left .contentsBox .btn {
+    margin-left: 0;
+  }
+}
+
+/*Laptops, Desktops (min-width: 1025px) and */
+/* Tablets, Ipads (portrait) (min-width: 768px) and */
+@media (max-width: 1024px) {
+  /* visual */
+  .visual .inner .titleBox {
+    padding: 40% 0;
+  }
+}
+
+/*Tablets, Ipads (landscape) (min-width: 481px) and */
+@media (max-width: 767px) {
+  .title {
+    font-size: 45px;
+  }
+
+  .detail {
+    font-size: 20px;
+  }
+
+  /* visual */
+  .visual .inner .titleBox {
+    padding: 60% 0;
+  }
+
+  .mainTitle {
+    font-size: 76px;
+    letter-spacing: 8px;
+  }
+
+  .subTitle {
+    font-size: 25px;
+  }
+
+  /* workList */
+  .workList .inner {
+    padding-bottom: 0px;
+  }
+
+  .workList .inner ul li {
+    padding-top: 195px;
+  }
+
+  .first {
+    padding-top: 270px !important;
+  }
+
+  .right .contentsBox {
+    padding-right: 10%;
+  }
+
+  .left .contentsBox {
+    padding-left: 10%;
+  }
+
+  .right .contentsBox .img,
+  .left .contentsBox .img {
+    width: 55%;
+    min-width: 55%;
+  }
+
+  .right .contentsBox .img img,
+  .left .contentsBox .img img {
+    width: 100%;
+  }
+
+  .right .contentsBox .btn,
+  .left .contentsBox .btn {
+    margin-top: 90px;
+  }
+
+  .right .contentsBox .img::before {
+    left: 60px;
+  }
+
+  .left .contentsBox .img::before {
+    left: -165px;
+  }
+
+  .btn {
+    width: 130px;
+    height: 108px;
+  }
+
+  .btn a {
+    font-size: 14px;
+  }
+}
+
+/*Most of the Smartphones Mobiles (Portrait)  */
+@media (min-width: 320px) and (max-width: 480px) {
+  .title {
+    font-size: 25px;
+  }
+
+  .detail {
+    font-size: 14px;
+    padding: 0;
+  }
+
+  /* visual */
+  .visual {
+    height: 500px;
+  }
+
+  .mainTitle {
+    font-size: 38px;
+    letter-spacing: 5px;
+  }
+
+  .subTitle {
+    font-size: 14px;
+    font-weight: normal;
+  }
+
+  /* workList */
+  .workList .inner ul li {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+
+  .first {
+    padding-top: 100px !important;
+  }
+
+  .first .titleBox,
+  .right .titleBox {
+    top: 0px;
+    left: 0%;
+    padding: 0 5%;
+    text-align: left;
+    width: 100%;
+  }
+
+  .first .titleBox {
+    top: 40px;
+  }
+
+  .right .contentsBox,
+  .left .contentsBox {
+    padding: 0 5%;
+    flex-direction: column-reverse;
+  }
+
+  .right .contentsBox .img {
+    width: 60%;
+    padding: 10% 20%;
+    background-color: var(--color-beige);
+    margin: 0 auto;
+  }
+
+  .right .contentsBox .img::before {
+    display: none;
+  }
+
+  .right .contentsBox .btn {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  .left .titleBox {
+    padding: 0 5%;
+    left: 0;
+    top: 0;
+    text-align: left;
+  }
+
+  .left .contentsBox .img {
+    width: 60%;
+    padding: 10% 20%;
+    background-color: var(--color-light-beige);
+    margin: 0 auto;
+  }
+
+  .left .contentsBox .img::before {
+    display: none;
+  }
+
+  .left .contentsBox .btn {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 0;
+  }
+
+  .btn {
+    width: 90px;
+    height: 78px;
+  }
+
+  .btn a {
+    font-size: 12px;
+  }
+}
